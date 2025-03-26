@@ -1,8 +1,11 @@
 // #region Imports
 
 /* React */
-import { StrictMode } from 'react'
-import ReactDOM from 'react-dom/client'
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom/client';
+
+/* Tailwind */
+import './styles/tailwind.css';
 
 // #endregion Imports
 
@@ -12,7 +15,7 @@ ReactDOM
   .createRoot(document.getElementById('root')!)
   .render(
     <StrictMode>
-      <div>Hello, World</div>
+      <div className="text-red-500">Hello, World</div>
     </StrictMode>
   );
 
