@@ -7,6 +7,9 @@ import ReactDOM from 'react-dom/client';
 /* Tailwind */
 import './styles/tailwind.css';
 
+/* Pin Atlas */
+import { Application } from './Application';
+
 // #endregion Imports
 
 // #region Application Root
@@ -15,7 +18,7 @@ ReactDOM
   .createRoot(document.getElementById('root')!)
   .render(
     <StrictMode>
-      <div className="text-red-500">Hello, World</div>
+      <Application />
     </StrictMode>
   );
 
