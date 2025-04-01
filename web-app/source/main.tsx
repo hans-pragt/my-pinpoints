@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom/client';
 import './styles/tailwind.css';
 
 /* Pin Atlas */
-import { Application } from './Application';
+import { Application } from './views/application/Application';
 
 // #endregion Imports
 
