@@ -1,7 +1,7 @@
 // #region Imports
 
 /* MPJ */
-import { Button } from '../../../common-components';
+import { Button } from '@common-components';
 
 // #endregion Imports
 

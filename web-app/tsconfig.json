@@ -18,7 +18,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Paths */
+    "baseUrl": "./source",
+    "paths": {
+      "@common-components": ["common-components"]
+    }
   },
   "include": ["source"],
   "references": [{ "path": "./tsconfig.vite.json" }]
