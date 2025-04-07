@@ -3,7 +3,7 @@
 /* React */
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 
-/* MPJ */
+/* PinPoints */
 import { PinsView } from '../views/pins/PinsView';
 
 // #endregion Imports

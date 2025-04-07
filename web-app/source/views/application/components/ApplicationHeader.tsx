@@ -1,6 +1,6 @@
 // #region Imports
 
-/* Pin Atlas */
+/* PinPoints */
 import { PinSearchField } from './PinSearchField';
 
 // #endregion Imports

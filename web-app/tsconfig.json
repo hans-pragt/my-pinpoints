@@ -23,7 +23,8 @@
     /* Paths */
     "baseUrl": "./source",
     "paths": {
-      "@common-components": ["common-components"]
+      "@common-components": ["common-components"],
+      "@routes": ["routes"]
     }
   },
   "include": ["source"],

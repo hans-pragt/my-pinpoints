@@ -3,9 +3,9 @@
 /* React */
 import { RouterProvider } from 'react-router-dom';
 
-/* Pin Atlas */
+/* PinPoints */
 import { ApplicationHeader } from './components/ApplicationHeader';
-import { router } from '../../routes';
+import { router } from '@routes';
 
 // #endregion Imports
 
