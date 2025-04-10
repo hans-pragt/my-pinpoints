@@ -44,8 +44,8 @@ export function Button(properties : ButtonProperties) {
       className={classnames(
         'flex flex-row gap-2 items-center',
         'px-4 py-2 rounded-lg',
-        'text-white',
-        'bg-blue-500 hover:bg-blue-400',
+        'font-medium text-[#FFECDB]',
+        'bg-[#FF9149] hover:bg-blue-400',
         className
       )}
     >

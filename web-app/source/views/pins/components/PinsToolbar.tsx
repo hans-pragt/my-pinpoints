@@ -11,7 +11,7 @@ export function PinsToolbar() {
 
   return (
     <>
-      <div className='bg-slate-200 flex flex-row p-4'>
+      <div className='bg-[#FFECDB] flex flex-row p-4'>
 
         <div className='flex-1' />
 

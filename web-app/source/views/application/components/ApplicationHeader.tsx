@@ -9,7 +9,7 @@ import { PinSearchField } from './PinSearchField';
 
 export function ApplicationHeader() {
   return (
-    <div className='flex flex-row p-4 drop-shadow-md rounded-t-lg bg-slate-100 '>
+    <div className='flex flex-row p-4 rounded-t-lg bg-white'>
 
       {/* Application Icon */}
 

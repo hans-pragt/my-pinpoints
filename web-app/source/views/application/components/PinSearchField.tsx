@@ -32,7 +32,7 @@ export function PinSearchField(properties : PinSearchFieldProperties) {
     >
 
       <input
-        className = 'w-full p-3 rounded-lg bg-slate-200'
+        className = 'w-full p-3 rounded-lg bg-[#AFDDFF]'
         type      = 'text'
       />
     </div>

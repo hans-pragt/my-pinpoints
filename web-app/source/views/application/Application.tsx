@@ -16,8 +16,8 @@ import { router } from '@routes';
  */
 export function Application() {
   return (
-    <div className='w-full h-screen pt-8 bg-slate-500'>
-      <div className='container mx-auto h-full rounded-t-xl flex flex-col bg-slate-300'>
+    <div className='w-full h-screen pt-8 bg-[#60B5FF]'>
+      <div className='container mx-auto h-full rounded-t-xl flex flex-col bg-white drop-shadow-md'>
         <ApplicationHeader />
         <RouterProvider router={router} />
       </div>
