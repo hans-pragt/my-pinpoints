@@ -3,6 +3,9 @@
 /* React */
 import { RouterProvider } from 'react-router-dom';
 
+/* Classnames */
+import classnames from 'classnames';
+
 /* PinPoints */
 import { ApplicationHeader } from './components/ApplicationHeader';
 import { router } from '@routes';
@@ -16,7 +19,13 @@ import { router } from '@routes';
  */
 export function Application() {
   return (
-    <div className='w-full h-screen pt-8 bg-[#60B5FF]'>
+    <div 
+      className={classnames(
+        'w-full h-screen', 
+        'sm:pt-8', 
+        'bg-linear-to-b from-[var(--primary-dark)] to-[var(--primary-light)]'
+      )}
+    >
       <div className='container mx-auto h-full rounded-t-xl flex flex-col bg-white drop-shadow-md'>
         <ApplicationHeader />
         <RouterProvider router={router} />
