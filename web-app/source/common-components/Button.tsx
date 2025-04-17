@@ -12,16 +12,26 @@ import classnames from 'classnames';
 
 interface ButtonProperties extends ButtonHTMLAttributes<HTMLButtonElement> {
 
+  // #region Properties
+
+  /**
+   * The text displayed inside the button.
+   */
   label : string;
 
-  // #region Icon
+  /**
+   * What colors the button will use.
+   * 
+   * @default 'primary'
+   */
+  kind : 'primary' | 'secondary';
 
   /**
    * An optional icon to display before the label.
    */
   icon? : ReactNode;
 
-  // #endregion Icon
+  // #endregion Properties
 
 }
 
@@ -33,6 +43,7 @@ export function Button(properties : ButtonProperties) {
   const {
     label,
     icon,
+    kind = 'primary',
 
     className,
     ...buttonProperties
@@ -42,10 +53,12 @@ export function Button(properties : ButtonProperties) {
     <button
       {...buttonProperties}
       className={classnames(
-        'flex flex-row gap-2 items-center',
         'px-4 py-2 rounded-lg',
-        'font-medium text-[#FFECDB]',
-        'bg-[#FF9149] hover:bg-blue-400',
+        'flex flex-row gap-2 items-center',
+        'cursor-pointer',
+        'font-medium',
+        kind === 'primary' ? 'text-white' : 'text-[var(--secondary-light)]',
+        kind === 'primary' ? 'bg-[var(--primary-dark)]' : 'bg-[var(--secondary-dark)]',
         className
       )}
     >

@@ -5,6 +5,8 @@ import { HTMLAttributes } from 'react';
 
 /* Classnames */
 import classnames from 'classnames';
+
+/* PinPoints */
 import { SearchIcon } from 'icons';
 
 // #endregion Imports
@@ -34,12 +36,12 @@ export function PinSearchField(properties : PinSearchFieldProperties) {
 
       {/* Search */}
       <input
-        className = 'w-full p-3 rounded-lg bg-[#AFDDFF]'
+        className = 'w-full p-3 rounded-lg border-4 border-[var(--primary-dark)]'
         type      = 'text'
       />
 
       <SearchIcon
-        className='text-white text-5xl absolute right-2 top-1/2 -translate-y-1/2'
+        className='text-[var(--primary-dark)] text-5xl absolute right-4 top-1/2 -translate-y-1/2'
         size={32}
       />
 

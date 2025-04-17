@@ -18,6 +18,7 @@ export function PinsToolbar() {
         {/* Add New Pin */}
         <Button
           label       = 'Add Pin'
+          kind        = 'secondary'
         />
 
       </div>
