@@ -21,9 +21,9 @@ export function ApplicationHeader() {
 
       {/* User */}
       <Button
-        className='w-40'
-        kind='primary'
-        label='Sign In'
+        className = 'w-40 text-xl'
+        kind      = 'primary'
+        label     = 'Sign In'
       />
 
     </div>

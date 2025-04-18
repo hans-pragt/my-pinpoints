@@ -54,9 +54,9 @@ export function Button(properties : ButtonProperties) {
       {...buttonProperties}
       className={classnames(
         'px-4 py-2 rounded-lg',
-        'flex flex-row gap-2 items-center',
+        'flex flex-row gap-2 items-center justify-center',
         'cursor-pointer',
-        'font-medium',
+        'font-(family-name:--serif-font)',
         kind === 'primary' ? 'text-white' : 'text-[var(--secondary-light)]',
         kind === 'primary' ? 'bg-[var(--primary-dark)]' : 'bg-[var(--secondary-dark)]',
         className

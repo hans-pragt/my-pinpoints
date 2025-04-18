@@ -17,6 +17,7 @@ export function PinsToolbar() {
 
         {/* Add New Pin */}
         <Button
+          className   = 'text-sm'
           label       = 'Add Pin'
           kind        = 'secondary'
         />
