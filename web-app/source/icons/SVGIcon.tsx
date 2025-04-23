@@ -20,6 +20,12 @@ interface SVGIconProperties extends IconProperties {
 
 // #region Component
 
+/*
+ * Icon Sources:
+ * 
+ * https://iconmonstr.com
+ */
+
 export const SVGIcon = memo((properties : SVGIconProperties) => {
   const {
     children,

@@ -3,6 +3,7 @@
 /* PinPoints */
 import { Button } from '@common-components';
 import { PinSearchField } from './PinSearchField';
+import { UserIcon } from 'icons';
 
 // #endregion Imports
 
@@ -10,7 +11,9 @@ import { PinSearchField } from './PinSearchField';
 
 export function ApplicationHeader() {
   return (
-    <div className='flex flex-row gap-4 p-4 rounded-t-lg bg-white'>
+    <div 
+      className='flex flex-row gap-4 p-4 rounded-t-lg bg-white'
+    >
 
       {/* Application Icon */}
 
@@ -21,9 +24,10 @@ export function ApplicationHeader() {
 
       {/* User */}
       <Button
-        className = 'w-40 text-xl'
+        className = 'w-40'
         kind      = 'primary'
         label     = 'Sign In'
+        icon      = {<UserIcon size={24} />}
       />
 
     </div>

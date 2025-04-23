@@ -2,6 +2,7 @@
 
 /* MPJ */
 import { Button } from '@common-components';
+import { AddIcon } from 'icons';
 
 // #endregion Imports
 
@@ -19,6 +20,7 @@ export function PinsToolbar() {
         <Button
           className   = 'text-sm'
           label       = 'Add Pin'
+          icon        = {<AddIcon size={24}  />}
           kind        = 'secondary'
         />
 
