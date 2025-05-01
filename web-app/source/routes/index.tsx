@@ -2,9 +2,9 @@
 
 /* React */
 import { createBrowserRouter, Navigate } from 'react-router-dom';
+import { MyPinsView } from 'views/my-pins/MyPinsView';
 
 /* PinPoints */
-import { PinsView } from '../views/pins/PinsView';
 
 // #endregion Imports
 
@@ -13,14 +13,14 @@ const router = createBrowserRouter([
   // Default Route
   {
     path: '/',
-    element: <Navigate to="/pins" />
+    element: <Navigate to="/my-pins" />
   },
 
   // #region Pins
 
   {
-    path: '/pins',
-    element: <PinsView />
+    path: '/my-pins',
+    element: <MyPinsView />
   }
 
   // #endregion Pins

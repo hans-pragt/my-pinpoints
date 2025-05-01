@@ -1,6 +1,6 @@
 // #region Imports
 
-/* MPJ */
+/* PinPoints */
 import { Button } from '@common-components';
 import { AddIcon } from 'icons';
 
@@ -26,7 +26,9 @@ export function PinsToolbar() {
 
       </div>
     </>
-  )
-}
+  );
+};
+
+PinsToolbar.displayName = 'PinsToolbar';
 
 // #endregion Component
