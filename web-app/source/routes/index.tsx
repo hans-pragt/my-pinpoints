@@ -18,7 +18,9 @@ const router = createBrowserRouter([
 
   // #region Pins
 
+  // Show the user their pins.
   {
+    // TODO: Add auth guard
     path: '/my-pins',
     element: <MyPinsView />
   }
