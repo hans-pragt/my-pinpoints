@@ -55,10 +55,10 @@ export function Button(properties : ButtonProperties) {
       className={classnames(
         'px-4 py-2 rounded-lg',
         'flex flex-row gap-2 items-center justify-center',
-        'cursor-pointer',
         'font-(family-name:--serif-font)',
+        'transition-colors',
         kind === 'primary' ? 'text-white' : 'text-[var(--secondary-light)]',
-        kind === 'primary' ? 'bg-[var(--primary-dark)]' : 'bg-[var(--secondary-dark)]',
+        kind === 'primary' ? 'bg-[var(--primary-dark)] hover:bg-[var(--primary-dark)]/80' : 'bg-[var(--secondary-dark)] hover:bg-[var(--secondary-dark)]/80',
         className
       )}
     >
