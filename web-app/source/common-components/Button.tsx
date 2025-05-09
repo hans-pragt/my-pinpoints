@@ -39,6 +39,9 @@ interface ButtonProperties extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 // #region Component
 
+/**
+ * A button that can invoke an action when the interacts with it.
+ */
 export function Button(properties : ButtonProperties) {
   const {
     label,
@@ -55,7 +58,7 @@ export function Button(properties : ButtonProperties) {
       className={classnames(
         'px-4 py-2 rounded-lg',
         'flex flex-row gap-2 items-center justify-center',
-        'font-(family-name:--serif-font)',
+        'font-(family-name:--serif-font) text-sm',
         'transition-colors',
         kind === 'primary' ? 'text-white' : 'text-[var(--secondary-light)]',
         kind === 'primary' ? 'bg-[var(--primary-dark)] hover:bg-[var(--primary-dark)]/80' : 'bg-[var(--secondary-dark)] hover:bg-[var(--secondary-dark)]/80',

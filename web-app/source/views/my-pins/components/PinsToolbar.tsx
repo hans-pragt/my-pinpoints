@@ -2,13 +2,17 @@
 
 /* PinPoints */
 import { Button } from '@common-components';
+import { Dialog } from 'common-components/Dialog';
 import { AddIcon } from 'icons';
+import { useState } from 'react';
 
 // #endregion Imports
 
 // #region Component
 
 export function PinsToolbar() {
+
+  const [pinDialogIsOpen, setPinDialogIsOpen] = useState<boolean>(false);
 
   return (
     <>
@@ -18,13 +22,22 @@ export function PinsToolbar() {
 
         {/* Add New Pin */}
         <Button
-          className   = 'text-sm'
           label       = 'Add Pin'
           icon        = {<AddIcon size={24}  />}
           kind        = 'secondary'
+          onClick     = {() => setPinDialogIsOpen(!pinDialogIsOpen)}
         />
 
       </div>
+
+      <Dialog
+        open          = {pinDialogIsOpen}
+        onOpenChange  = {open => setPinDialogIsOpen(open)}
+
+        title         = 'Add a Pin'
+      >
+        <div>Create a pin</div>
+      </Dialog>
     </>
   );
 };
