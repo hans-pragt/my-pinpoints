@@ -56,7 +56,7 @@ export function Button(properties : ButtonProperties) {
     <button
       {...buttonProperties}
       className={classnames(
-        'px-4 py-2 rounded-lg',
+        'px-4 py-3 rounded-xl',
         'flex flex-row gap-2 items-center justify-center',
         'font-(family-name:--serif-font) text-sm',
         'transition-colors',

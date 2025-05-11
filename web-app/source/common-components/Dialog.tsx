@@ -8,6 +8,7 @@ import * as RadixDialog from '@radix-ui/react-dialog'
 
 /* Classnames */
 import classnames from 'classnames';
+import { CloseIcon } from 'icons';
 
 // #endregion Imports
 
@@ -83,30 +84,43 @@ export function Dialog(properties : DialogProperties) {
         <RadixDialog.Content
           className   = {classnames(
             'fixed left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-50',
-            'grid gap-4 w-full max-w-lg p-6',
-            'bg-white shado-lg sm:rounded-lg',
-            'duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-top-[48%]  data-[state=open]:slide-in-from-top-[48%]'
+            'grid gap-4 w-full max-w-lg',
+            'bg-white shadow-lg sm:rounded-xl',
+            'duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-top-[48%]'
           )}
         >
 
           {/* Close */}
           <RadixDialog.Close 
             className   = {classnames(
-              'absolute right-4 top-4',
-              'disabled:pointer-events-none focus:outline-none' 
+              'absolute right-5 top-5',
+              'disabled:pointer-events-none focus:outline-none'
             )}
           >
-            <span>close</span>
+            <CloseIcon 
+              className = {classnames(
+                'rounded-full p-1', 
+                'text-[var(--secondary-light)]',
+                'bg-[var(--secondary-dark)] hover:bg-[var(--secondary-dark)]/80 text-white'
+              )}
+              size={36} 
+            />
           </RadixDialog.Close>
 
           {/* Header */}
           <RadixDialog.Title 
-            className='flex flex-col space-y-1.5 text-center sm:text-left'
+            className={classnames(
+              'flex flex-col p-6', 
+              'bg-[var(--secondary-light)] sm:rounded-t-xl',
+              'text-center sm:text-left'
+            )}
           >
             {title}
           </RadixDialog.Title>
 
-          {children}
+          <div className='p-6'>
+            {children}
+          </div>
 
         </RadixDialog.Content>
 
