@@ -93,7 +93,7 @@ export function Dialog(properties : DialogProperties) {
           {/* Close */}
           <RadixDialog.Close 
             className   = {classnames(
-              'absolute right-5 top-5',
+              'absolute right-4 top-4',
               'disabled:pointer-events-none focus:outline-none'
             )}
           >
@@ -110,8 +110,9 @@ export function Dialog(properties : DialogProperties) {
           {/* Header */}
           <RadixDialog.Title 
             className={classnames(
-              'flex flex-col p-6', 
+              'flex flex-col p-5', 
               'bg-[var(--secondary-light)] sm:rounded-t-xl',
+              'text-[var(--secondary-dark)] font-(family-name:--serif-font) text-xl',
               'text-center sm:text-left'
             )}
           >

@@ -2,9 +2,9 @@
 
 /* PinPoints */
 import { Button } from '@common-components';
-import { Dialog } from 'common-components/Dialog';
 import { AddIcon } from 'icons';
 import { useState } from 'react';
+import { AddPinDialog } from './AddPinDialog';
 
 // #endregion Imports
 
@@ -30,14 +30,10 @@ export function PinsToolbar() {
 
       </div>
 
-      <Dialog
+      <AddPinDialog
         open          = {pinDialogIsOpen}
         onOpenChange  = {open => setPinDialogIsOpen(open)}
-
-        title         = 'Add a Pin'
-      >
-        <div>Create a pin</div>
-      </Dialog>
+      />
     </>
   );
 };
